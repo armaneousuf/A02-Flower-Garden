@@ -1,0 +1,83 @@
+/* FONT INTER */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* FONT NOTO SERIF */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* RESETS */
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-serif: "Noto Serif", serif;
+  --dark-one: #252432;
+  --dark-two: #8987a1;
+  --dark: #000000;
+  --primary-color: #e95a08;
+  --secondary-color: #00000080;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: var(--font-inter);
+}
+
+/* NAVIGATION STYLES */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 48px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li:nth-child(1),
+.navbar ul li:nth-child(4) {
+  color: var(--dark-one);
+}
+
+.navbar ul li:nth-child(2),
+.navbar ul li:nth-child(3) {
+  color: var(--dark-two);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE PART */
+
+@media screen and (max-width: 640px) {
+  .navbar ul li:nth-child(1),
+  .navbar ul li:nth-child(2),
+  .navbar ul li:nth-child(3) {
+    display: none;
+  }
+}
