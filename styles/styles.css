@@ -22,9 +22,10 @@
 }
 
 body {
-  max-width: 1280px;
+  max-width: 1140px;
   margin: 0 auto;
   font-family: var(--font-inter);
+  background-color: #f5f8ff;
 }
 
 img {
@@ -145,6 +146,57 @@ section {
     width: 100%;
 }
 
+/* FLOWER STORE SECTION STYLING */
+
+.flower-store-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* height: 300px; */
+
+    /* img {
+        height: 450px;
+        width: 500px;
+    } */
+}
+
+.flower-store-container h2 {
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-top: 100px; */
+    padding-top: 30px;
+}
+
+.flower-store-container ul li {
+    padding-top: 40px;
+    margin-left: 40px;
+    font-family: var(--font-inter);
+    font-size: 22px;
+    color: var(--dark-two);
+}
+
+.trusted-badge {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    left: 355px;
+    /* top: 250px; */
+    bottom: 440px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fourth-section {
+    position: relative;
+}
 
 
 
