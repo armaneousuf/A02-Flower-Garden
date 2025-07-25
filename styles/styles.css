@@ -4,6 +4,11 @@
 /* FONT NOTO SERIF */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 /* RESETS */
 :root {
     --font-inter: "Inter", sans-serif;
@@ -285,6 +290,7 @@ section {
 }
 
 /* Newsletter Section */
+
 .hero-section.newsletter-section {
     background: url('../assets/news-letter-bg.png') no-repeat center center/cover;
     color: white;
@@ -356,7 +362,7 @@ section {
 
 /* Main Footer Section */
 .main-footer {
-    background-color: white;
+    /* background-color: white; */
     padding: 40px 20px;
     border-top: 1px solid #eee;
     color: #555;
@@ -374,7 +380,7 @@ section {
 
 .footer-brand {
     flex: 1 1 300px;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
 .footer-logo {
@@ -438,12 +444,16 @@ section {
     border-radius: 50%;
     font-size: 1.2em;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .footer-social li a:hover {
     background-color: #007bff;
     color: white;
 }
+
+
+
 
 /* RESPONSIVE PART */
 @media screen and (max-width: 768px) {
@@ -462,6 +472,34 @@ section {
         max-width: 350px;
     }
 
+        .flower-store-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .flower-store-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flower-store-container h2 {
+        font-size: 40px;
+        /* text-align: center; */
+        margin-left: 50px;
+    }
+
+    .flower-store-container ul li {
+        font-size: 24px;
+        margin-left: 90px;
+        padding: 15px;
+        /* text-align: center; */
+        /* list-style-type: none; */
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
     .hero-section.newsletter-section .email-signup button {
         margin-top: 10px;
     }
@@ -477,7 +515,7 @@ section {
     .footer-social {
         width: 100%;
         max-width: none;
-        margin-bottom: 30px;
+        /* margin-bottom: 0px; */
     }
 
     .footer-links {
@@ -492,6 +530,8 @@ section {
     .footer-social ul {
         justify-content: center;
     }
+
+    
 }
 
 @media screen and (max-width: 640px) {
@@ -549,13 +589,16 @@ section {
 
     .flower-store-container h2 {
         font-size: 24px;
-        text-align: center;
+        /* text-align: center; */
+        margin-left: 20px;
     }
 
     .flower-store-container ul li {
         font-size: 14px;
-        text-align: center;
-        list-style-type: none;
+        margin-left: 50px;
+        padding: 15px;
+        /* text-align: center; */
+        /* list-style-type: none; */
     }
 
     .trusted-badge {
@@ -592,4 +635,6 @@ section {
     .hero-section.newsletter-section .hero-content h1 {
         font-size: 1.8em;
     }
+    
+
 }
