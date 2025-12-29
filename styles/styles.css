@@ -27,10 +27,15 @@
 }
 
 body {
-    max-width: 1140px;
-    margin: 0 auto;
+    /* max-width: 1140px; */
+    /* margin: 0 auto; */
     font-family: var(--font-inter);
     background-color: #f5f8ff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 img {
@@ -148,7 +153,7 @@ section {
 
 .btn-primary:hover {
     background: #020024;
-background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(3, 151, 215, 1) 91%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(3, 151, 215, 1) 91%, rgba(0, 212, 255, 1) 100%);
 }
 
 /* FLOWER STORE SECTION STYLING */
@@ -192,6 +197,7 @@ background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%,
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -380,9 +386,10 @@ background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     gap: 30px;
+    /* width: 100%; */
 }
 
 .footer-brand {
@@ -479,7 +486,7 @@ background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%,
         max-width: 350px;
     }
 
-        .flower-store-container {
+    .flower-store-container {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
@@ -538,10 +545,11 @@ background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%,
         justify-content: center;
     }
 
-    
+
 }
 
 @media screen and (max-width: 640px) {
+
     .navbar ul li:nth-child(1),
     .navbar ul li:nth-child(2),
     .navbar ul li:nth-child(3) {
@@ -642,5 +650,5 @@ background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%,
     .hero-section.newsletter-section .hero-content h1 {
         font-size: 1.8em;
     }
-    
+
 }
